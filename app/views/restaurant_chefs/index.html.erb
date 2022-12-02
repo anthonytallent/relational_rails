@@ -1,0 +1,7 @@
+<h1><%= "#{@restaurant.name} Chefs"%></h1>
+<% @chefs.each do |chef| %>
+<h3><%= chef.name%></h3>
+<p><%= "Age: #{chef.age}"%></p>
+<p><%= "Title: #{chef.title}"%></p>
+<p><%= "Full Time Status: #{chef.full_time}"%></p>
+<% end %>
