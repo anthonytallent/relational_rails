@@ -245,74 +245,14 @@
           1,
           1,
           1,
+          1,
+          1,
           null
         ]
       },
       "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/helpers/application_helper.rb": {
         "lines": [
           1,
-          null
-        ]
-      },
-      "/Users/anthonytallent/mod_2/class_projects/relational_rails/spec/features/restaurants/index_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/anthonytallent/mod_2/class_projects/relational_rails/spec/features/restaurants/show_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          4,
-          4,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
           null
         ]
       },
@@ -337,12 +277,14 @@
           null
         ]
       },
-      "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/controllers/chefs_controller.rb": {
+      "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/controllers/restaurant_chefs_controller.rb": {
         "lines": [
           1,
           null,
           1,
-          1,
+          8,
+          8,
+          null,
           null,
           null
         ]
@@ -352,22 +294,8 @@
           1,
           null
         ]
-      },
-      "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/controllers/restaurants_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          4,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1669946946
+    "timestamp": 1669954633
   }
 }
