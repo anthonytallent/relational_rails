@@ -37,10 +37,13 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'pry'
+  gem 'pry-rails' # pry prints in terminal  in the format we're used to from M1
   gem 'rspec-rails'
-  gem 'capybara'
-  gem 'launchy' # save_and_open_page
   gem 'simplecov'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'shoulda-matchers'
+  gem 'orderly' # allows you to test the order in which info is displayed on the webpage
 end
 
 group :development do
