@@ -1,5 +1,8 @@
+<center>
 <h1>Restaurants</h1>
 <% @restaurants.each do |restaurant|%>
   <p><%= restaurant.name%></p>
+  <p><%= "Created at: #{restaurant.created_at}" %></p>
 <% end %>
+</center>
 
