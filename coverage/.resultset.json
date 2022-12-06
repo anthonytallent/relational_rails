@@ -249,44 +249,12 @@
           1,
           1,
           1,
+          1,
+          1,
           null
         ]
       },
       "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/helpers/application_helper.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/controllers/restaurants_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/controllers/application_controller.rb": {
         "lines": [
           1,
           null
@@ -314,6 +282,50 @@
           null
         ]
       },
+      "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/controllers/restaurants_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/models/chef.rb": {
         "lines": [
           1,
@@ -322,6 +334,6 @@
         ]
       }
     },
-    "timestamp": 1670287554
+    "timestamp": 1670293120
   }
 }
