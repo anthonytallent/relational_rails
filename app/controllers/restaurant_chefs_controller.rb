@@ -4,6 +4,11 @@ class RestaurantChefsController < ApplicationController
     # binding.pry
     @restaurant = Restaurant.find(params[:restaurant_id])
     @chefs = @restaurant.chefs
+    if params[:sorted]
+      @chefs = @restaurant.alphabetical
+    else
+      @chefs = @restaurant.chefs
+    end
   end
 
   def new

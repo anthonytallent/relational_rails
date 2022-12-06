@@ -1,7 +1,7 @@
 class ChefsController < ApplicationController
 
   def index
-    @chefs = Chef.all
+    @chefs = Chef.only_true
   end
 
   def show
