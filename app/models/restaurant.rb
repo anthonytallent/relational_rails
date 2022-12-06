@@ -5,6 +5,10 @@ class Restaurant < ApplicationRecord
     chefs.count
   end
 
+  def alphabetical
+    chefs.order(:name)
+  end
+
   # def self.most_recently_created
   #   order(created_at: :desc)
   # end

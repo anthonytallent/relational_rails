@@ -19,8 +19,8 @@ RSpec.describe 'the chefs index page' do
     expect(page).to have_content(@stephanie.name)
     expect(page).to have_content(@susie.name)
     expect(page).to have_content(@bellatrix.name)
-    expect(page).to have_content(@crusty.name)
-    expect(page).to have_content(@slimy.name)
-    expect(page).to have_content(@nasty.name)
+    # expect(page).to have_content(@crusty.name)
+    # expect(page).to have_content(@slimy.name)
+    # expect(page).to have_content(@nasty.name)
   end
 end

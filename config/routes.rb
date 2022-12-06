@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   post '/restaurants/:restaurant_id/chefs', to: 'restaurant_chefs#create'
   get '/chefs/:id/edit', to: 'chefs#edit'
   patch '/chefs/:id', to: 'chefs#update'
+  delete '/restaurants/:id', to: 'restaurants#destroy'
 end

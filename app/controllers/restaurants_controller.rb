@@ -27,6 +27,12 @@ class RestaurantsController < ApplicationController
     redirect_to "/restaurants/#{@restaurant.id}"
   end
 
+  def destroy
+    restaurant = Restaurant.find(params[:id])
+    restaurant.destroy
+    redirect_to '/restaurants'
+  end
+
   private
     def restaurant_params
       params.permit(:name, :city, :star_rating, :osha_safety_certified)

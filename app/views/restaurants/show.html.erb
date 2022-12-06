@@ -1,4 +1,6 @@
 <%= link_to "See our chefs", "/restaurants/#{@restaurant.id}/chefs"%>
+<%= link_to "Update #{@restaurant.name}", "/restaurants/#{@restaurant.id}/edit" %>
+<%= link_to "Delete #{@restaurant.name}", "/restaurants/#{@restaurant.id}", method: :delete %>
 <h1><%= @restaurant.name %></h1>
 
 <p>City: <%= @restaurant.city %></p>
