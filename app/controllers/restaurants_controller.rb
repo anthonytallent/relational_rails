@@ -21,6 +21,12 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.find(params[:id])
   end
 
+  def update
+    @restaurant = Restaurant.find(params[:id])
+    @restaurant.update(restaurant_params)
+    redirect_to "/restaurants/#{@restaurant.id}"
+  end
+
   private
     def restaurant_params
       params.permit(:name, :city, :star_rating, :osha_safety_certified)

@@ -32,7 +32,7 @@ RSpec.describe 'the restaurant edit' do
 
     click_button "Edit Stinky Pete's"
 
-    fill_in 'name', with: 'Smelly guy'
+    fill_in 'name', with: 'Smelly Guy'
     fill_in 'city', with: 'Highland'
     fill_in 'star_rating', with: '2'
     fill_in 'osha_safety_certified', with: 'true'
@@ -40,5 +40,8 @@ RSpec.describe 'the restaurant edit' do
 
     expect(current_path).to eq("/restaurants/#{restaurant.id}")
     expect(page).to have_content("Smelly Guy")
+    expect(page).to have_content("Highland")
+    expect(page).to have_content(2)
+    expect(page).to have_content(true)
   end
 end

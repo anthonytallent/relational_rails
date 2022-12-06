@@ -266,7 +266,7 @@
           1,
           null,
           1,
-          0,
+          1,
           null,
           null,
           null,
@@ -291,7 +291,7 @@
           null,
           null,
           1,
-          0,
+          1,
           null,
           null,
           1,
@@ -309,7 +309,13 @@
           null,
           1,
           1,
-          0,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -319,8 +325,15 @@
           1,
           null
         ]
+      },
+      "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/models/chef.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1670292567
+    "timestamp": 1670293120
   }
 }
