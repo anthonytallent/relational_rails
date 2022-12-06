@@ -255,6 +255,7 @@
           1,
           1,
           1,
+          1,
           null
         ]
       },
@@ -488,6 +489,29 @@
           null
         ]
       },
+      "/Users/anthonytallent/mod_2/class_projects/relational_rails/spec/features/restaurants/destroy_spec.rb": {
+        "lines": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/anthonytallent/mod_2/class_projects/relational_rails/spec/features/restaurants/edit_spec.rb": {
         "lines": [
           null,
@@ -665,7 +689,7 @@
           1,
           null,
           1,
-          7,
+          8,
           null,
           null,
           1,
@@ -778,11 +802,11 @@
           1,
           null,
           1,
-          4,
+          5,
           null,
           null,
           1,
-          7,
+          8,
           null,
           null,
           1,
@@ -796,6 +820,12 @@
           null,
           1,
           2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -812,6 +842,6 @@
         ]
       }
     },
-    "timestamp": 1670304744
+    "timestamp": 1670359139
   }
 }
