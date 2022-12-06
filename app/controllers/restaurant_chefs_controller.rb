@@ -16,6 +16,11 @@ class RestaurantChefsController < ApplicationController
     redirect_to "/restaurants/#{@chef.restaurant_id}/chefs"
   end
 
+  # def edit
+  #   binding.pry
+  #   @chef = Chef.find(params[:id])
+  # end
+
   private
   def chef_params
     params.permit(:restaurant_id, :name, :age, :title, :full_time)
