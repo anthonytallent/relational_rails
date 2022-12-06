@@ -2,7 +2,7 @@
 <%= link_to "New Restaurant", "/restaurants/new" %>
 <h1>Restaurants</h1>
 <% @restaurants.each do |restaurant|%>
-  <p><%= restaurant.name%></p>
+  <p><%= restaurant.name%> <%= button_to "Edit #{restaurant.name}", "/restaurants/#{restaurant.id}/edit", method: :get %></p>
   <p><%= "Created at: #{restaurant.created_at}" %></p>
 <% end %>
 </center>

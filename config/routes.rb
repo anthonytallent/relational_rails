@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get '/chefs/:id', to: 'chefs#show'
   get '/restaurants/:restaurant_id/chefs', to: 'restaurant_chefs#index'
   post '/restaurants', to: 'restaurants#create'
+  get '/restaurants/:id/edit', to: 'restaurants#edit'
+  patch '/restaurants/:id', to: 'restaurants#update'
 end

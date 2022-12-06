@@ -1,0 +1,11 @@
+<%= form_with url: "restaurants/#{@restaurant.id}", method: :patch, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :city %>
+  <%= form.text_field :city %>
+  <%= form.label :star_rating %>
+  <%= form.text_field :star_rating %>
+  <%= form.label :osha_safety_certified %>
+  <%= form.text_field :osha_safety_certified %>
+  <%= form.submit "Update Restaurant" %>
+<% end %>
