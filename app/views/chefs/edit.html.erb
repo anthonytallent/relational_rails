@@ -1,0 +1,11 @@
+<%= form_with url: "/chefs/#{@chef.id}", method: :patch, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :age %>
+  <%= form.text_field :age %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <%= form.label :full_time %>
+  <%= form.text_field :full_time %>
+  <%= form.submit "Update Chef" %>
+<% end %>
