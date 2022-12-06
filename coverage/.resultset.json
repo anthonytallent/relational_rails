@@ -251,6 +251,8 @@
           1,
           1,
           1,
+          1,
+          1,
           null
         ]
       },
@@ -266,7 +268,7 @@
           1,
           null,
           1,
-          1,
+          0,
           null,
           null,
           null,
@@ -282,25 +284,14 @@
           null
         ]
       },
-      "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/controllers/restaurants_controller.rb": {
+      "/Users/anthonytallent/mod_2/class_projects/relational_rails/app/controllers/restaurant_chefs_controller.rb": {
         "lines": [
           1,
           null,
           1,
+          null,
           2,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
+          2,
           null,
           null,
           1,
@@ -308,7 +299,7 @@
           null,
           null,
           1,
-          1,
+          null,
           1,
           1,
           null,
@@ -316,6 +307,10 @@
           1,
           1,
           1,
+          null,
+          null,
+          null,
+          null,
           null,
           null
         ]
@@ -334,6 +329,6 @@
         ]
       }
     },
-    "timestamp": 1670293120
+    "timestamp": 1670297292
   }
 }
