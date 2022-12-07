@@ -6,6 +6,8 @@ class RestaurantChefsController < ApplicationController
     @chefs = @restaurant.chefs
     if params[:sorted]
       @chefs = @restaurant.alphabetical
+    elsif params[:age]
+      @chefs = @restaurant.chefs_greater_than(params[:age])
     else
       @chefs = @restaurant.chefs
     end

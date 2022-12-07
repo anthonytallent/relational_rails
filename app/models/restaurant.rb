@@ -9,6 +9,10 @@ class Restaurant < ApplicationRecord
     chefs.order(:name)
   end
 
+  def chefs_greater_than(input_age)
+    chefs.where("age > #{input_age}")
+  end
+
   # def self.most_recently_created
   #   order(created_at: :desc)
   # end

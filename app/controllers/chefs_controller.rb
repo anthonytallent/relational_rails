@@ -19,6 +19,12 @@ class ChefsController < ApplicationController
     redirect_to "/chefs/#{@chef.id}"
   end
 
+  def destroy
+    chef = Chef.find(params[:id])
+    chef.destroy
+    redirect_to '/chefs'
+  end
+
   private
     def chef_params
       params.permit(:resstaurant_id, :name, :age, :title, :full_time)

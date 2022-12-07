@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'the chefs index page' do
+RSpec.describe 'restaurant model' do
   before :each do 
     @stinky_petes = Restaurant.create!(name: "Stinky Pete's", city: "Redlands", star_rating: 1, osha_safety_certified: false)
     @nice_smellin_sals = Restaurant.create!(name: "Nice Smellin' Sal's", city: "Redlands", star_rating: 5, osha_safety_certified: true)
@@ -13,21 +13,17 @@ RSpec.describe 'the chefs index page' do
     @nasty = @stinky_petes.chefs.create!(name: "Nasty Norman", age: 12, title: "Owner", full_time: true)  
   end
 
-  it 'displays the names of all the chefs' do
-    visit '/chefs'
-    # save_and_open_page
-    expect(page).to have_content(@stephanie.name)
-    expect(page).to have_content(@susie.name)
-    expect(page).to have_content(@bellatrix.name)
-    # expect(page).to have_content(@crusty.name)
-    # expect(page).to have_content(@slimy.name)
-    # expect(page).to have_content(@nasty.name)
+  it 'will count the chefs associated with the restaurant' do
+    expect(@nice_smellin_sals.chefs_count).to eq(3)
+    expect(@stinky_petes.chefs_count).to eq(3)
   end
+  describe '#alphabetical'
+    it 'will sort the chefs alphabetically' do
+      expect(@nice_smellin_sals.alphabetical).to eq([@bellatrix, @stephanie, @susie])
+    end
 
-  it 'deletes a chef if the link is clicked' do
-    visit '/chefs'
-    expect(page).to have_content(@stephanie.name)
-    click_link "Delete #{@stephanie.name}"
-    expect(page).to_not have_content(@stephanie.name)
-  end
+    it 'will filter chefs by ages over x' do
+      expect(@nice_smellin_sals.chefs_greater_than(21)).to eq([@stephanie, @bellatrix])
+    end
+
 end

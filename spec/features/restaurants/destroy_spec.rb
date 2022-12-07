@@ -9,7 +9,7 @@
 require 'rails_helper'
 
 RSpec.describe 'destroy restaurant' do
-  it 'deletes artist from show page' do
+  it 'deletes restaurant from show page' do
     restaurant = Restaurant.create!(name: "Sally Mae's", city: "Redlands", star_rating: 1, osha_safety_certified: false)
     visit "/restaurants/#{restaurant.id}"
     click_link "Delete #{restaurant.name}"
