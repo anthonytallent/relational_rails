@@ -74,7 +74,7 @@ RSpec.describe 'the restaurant_chefs index page' do
     expect(page).to have_content("Full Time Status: #{@susie.full_time}")
   end
 
-  it 'I see the resstaurant chefs with that restaurant_id including the attributes' do 
+  it 'I see the restaurant chefs with that restaurant_id including the attributes' do 
     visit "/restaurants/#{@nice_smellin_sals.id}/chefs"
 
     expect(page).to have_content(@bellatrix.name)
@@ -82,4 +82,18 @@ RSpec.describe 'the restaurant_chefs index page' do
     expect(page).to have_content("Title: #{@bellatrix.title}")
     expect(page).to have_content("Full Time Status: #{@bellatrix.full_time}")
   end
+
+  it 'I see the restaurant chefs with ages greater than the input value' do
+    visit "/restaurants/#{@nice_smellin_sals.id}/chefs"
+
+    fill_in('age', with: "21") 
+    click_button "Sort #{@nice_smellin_sals.name} Chefs who are older than *input number*"
+
+    expect(page).to have_content(@bellatrix.name)
+    expect(page).to have_content(@stephanie.name)
+    expect(page).to_not have_content(@susie.name)
+
+  end
+
+
 end

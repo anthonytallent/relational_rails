@@ -1,4 +1,5 @@
 <%= link_to "Update #{@chef.name}", "/chefs/#{@chef.id}/edit" %>
+<%= link_to "Delete #{@chef.name}", "/chefs/#{@chef.id}", method: :delete %>
 <h1><%= @chef.name%></h1>
 <p><%= "Age: #{@chef.age}"%></p>
 <p><%= "Title: #{@chef.title}"%></p>
