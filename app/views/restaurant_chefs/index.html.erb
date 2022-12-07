@@ -2,7 +2,7 @@
 <%= link_to "#{@restaurant.name} chefs listed alphabetically", "/restaurants/#{@restaurant.id}/chefs?sorted=true" %>
 <%= form_with url: "/restaurants/#{@restaurant.id}/chefs", method: :get, local: true do |form| %>
   <%= form.label :age %>
-  <%= form.text_field :age %>
+  <%= form.number_field :age %>
   <%= form.submit "Sort #{@restaurant.name} Chefs who are older than *input number*" %>
   <% end %>
 <h1><%= "#{@restaurant.name} Chefs"%></h1>
